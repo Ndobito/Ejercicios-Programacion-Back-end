@@ -14,9 +14,8 @@ class ProveedorController{
         require_once 'view/footer.php';
     }
 
-    public function Crud( ){
+    public function Crud(){
         $pvd = new proveedor();
-
         if(isset($_REQUEST['nit'])){
         $pvd = $this->model->Obtener($_REQUEST['nit']);
         }

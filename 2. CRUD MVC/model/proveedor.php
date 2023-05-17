@@ -29,7 +29,7 @@ class proveedor{
     public function Obtener($nit){
         try{
             $stm = $this->pdo->prepare("SELECT * FROM proveedor WHERE nit = ?");
-            $stm -> execute();
+            $stm -> execute([$nit]);
             return $stm -> fetchAll(PDO::FETCH_OBJ);
         }catch(Exception $e){
             die($e -> getMessage());
