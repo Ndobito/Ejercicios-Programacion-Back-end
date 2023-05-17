@@ -48,23 +48,36 @@ table th, td{
     padding: 10px;
 }
 
-table td:last-child{
+table td:nth-child(5){
     background: black;
     color: #ffeba7;
     padding: 0px;
 }
 
-table td:last-child:hover{
+table td:nth-child(6){
+    background: black;
+    color: red !important;
+    padding: 10px;
+}
+
+table td:nth-child(5):hover{
     background: #1f2029;
 }
 
-table td a{
+table td:nth-child(5) a{
     color: aqua;
     width: 100%;
     height: 100%;
     padding: 10px;
 }
 
+table td:nth-child(6) a{
+    color: red;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+
 table td a:hover{
-    color: rgb(188, 252, 252);
+    color: rgb(253, 90, 90);
 }

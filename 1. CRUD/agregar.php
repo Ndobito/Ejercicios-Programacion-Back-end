@@ -1,5 +1,5 @@
 <?php
-
+// Incluye  el archivoe 
 include("conexion.php");
 $conexion = conectar();
 $CodProd = $_POST["ctCodProd"];
@@ -14,12 +14,10 @@ $CodProd = "";
 $NameProd = "";
 $DesProd = "";
 
-
 if (desconectar($conexion)) {
     echo "Desconexion Exitosa";
     header('Location:index.html');
 } else{
     echo "Desconexion fallida";
 }
-
 ?>
